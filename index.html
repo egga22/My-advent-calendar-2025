@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Advent Calendar 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">December 2025</p>
+      <h1>My Advent Calendar</h1>
+      <p class="lede">Click on each day to reveal a cozy prompt. New doors unlock as December unfolds.</p>
+    </div>
+    <div class="badge">25 days of joy</div>
+  </header>
+
+  <main>
+    <section id="calendar" class="calendar" aria-label="Advent calendar"></section>
+  </main>
+
+  <dialog id="entry-modal" class="modal">
+    <button class="modal__close" aria-label="Close modal">×</button>
+    <div class="modal__content">
+      <p class="modal__date"></p>
+      <h2 class="modal__title"></h2>
+      <p class="modal__body"></p>
+    </div>
+  </dialog>
+
+  <template id="day-card">
+    <article class="card" role="button" tabindex="0">
+      <p class="card__label"></p>
+      <h3 class="card__day"></h3>
+      <p class="card__status"></p>
+    </article>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
